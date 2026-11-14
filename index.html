@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ogundele Olumide is a software engineer based in Lagos, Nigeria, building web products for schools and students."
+    />
+    <title>Ogundele Olumide | Software engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="#top" class="brand" aria-label="Go to top">Ogundele Olumide</a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span id="scroll-progress"></span>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-dark" id="home">
+          <div class="container hero-inner">
+            <div class="hero-copy reveal reveal-up">
+              <p class="eyebrow">Software engineer based in Lagos, Nigeria</p>
+              <h1>
+                <span>Ogundele</span>
+                <span>Olumide</span>
+              </h1>
+              <p class="intro-text">
+                I build web products for schools and students, and I run Fin-esse,
+                where I explain how fintech works in plain English. I enjoy taking an
+                idea from the first product decisions through to a working release.
+              </p>
+              <div class="hero-actions">
+                <a href="#work" class="button primary">View my work</a>
+              </div>
+              <ul class="social-list" aria-label="Social links">
+                <li><a href="https://www.linkedin.com/in/ogundele-olumide" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/Olus-Oguns" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+                <li><a href="mailto:olusoguns2005@gmail.com">Email</a></li>
+              </ul>
+            </div>
+
+            <div class="hero-visual reveal reveal-up reveal-delay" aria-label="Portrait area">
+              <div class="portrait-shell">
+                <img
+                  src="assets/olumide-photo.jpg"
+                  alt="Portrait of Ogundele Olumide"
+                  class="portrait-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="work section-cream" id="work">
+          <div class="container">
+            <h2 class="section-title reveal">Selected work</h2>
+
+            <article class="project feature reveal">
+              <div class="project-copy">
+                <h3>Fin-esse</h3>
+                <p>
+                  I founded it to make fintech easier to understand. I built and
+                  deployed the website and its content management system, and added
+                  tools like the budgeting planner and compound interest calculator.
+                </p>
+                <a href="https://fin-essefinance.com" target="_blank" rel="noreferrer noopener">Visit Fin-esse</a>
+              </div>
+
+              <div class="budget-card" aria-label="Fin-esse budget planner">
+                <h4>Try the budget planner</h4>
+                <div class="planner-row">
+                  <label for="income-input">Monthly take-home income in naira</label>
+                  <div class="income-field">
+                    <input
+                      id="income-input"
+                      name="income"
+                      type="number"
+                      min="0"
+                      step="1000"
+                      value="250000"
+                      inputmode="numeric"
+                      aria-describedby="budget-error"
+                    />
+                    <button type="button" class="button planner-button" id="calculate-budget">Calculate</button>
+                  </div>
+                </div>
+
+                <div class="results" id="budget-results" aria-live="polite">
+                  <div class="result-row">
+                    <span>Needs (50%)</span>
+                    <strong id="needs-amount">₦125,000</strong>
+                  </div>
+                  <div class="result-row">
+                    <span>Wants (30%)</span>
+                    <strong id="wants-amount">₦75,000</strong>
+                  </div>
+                  <div class="result-row">
+                    <span>Savings (20%)</span>
+                    <strong id="savings-amount">₦50,000</strong>
+                  </div>
+                </div>
+                <p class="budget-error" id="budget-error" aria-live="assertive"></p>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-name-group">
+                <h3>Akadence</h3>
+              </div>
+              <div class="project-story">
+                <p>
+                  A Buildcore Premier team project that brings attendance, results,
+                  and parent access into one school operating system. I contributed to
+                  frontend and backend features, API integration, and database design.
+                </p>
+                <a href="https://akadence.com" target="_blank" rel="noreferrer noopener">Visit Akadence</a>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-name-group">
+                <h3>Edu4U Global</h3>
+              </div>
+              <div class="project-story">
+                <p>
+                  As CTO, I helped scope the first version around learning resources,
+                  student communities, and career preparation, then coordinated design
+                  and development.
+                </p>
+                <a href="https://edu4u-clickable-demo.finessestoryltd.chatgpt.site" target="_blank" rel="noreferrer noopener">Try the clickable demo</a>
+              </div>
+            </article>
+
+            <article class="project-row reveal">
+              <div class="project-name-group">
+                <h3>MetLife Matchday</h3>
+              </div>
+              <div class="project-story">
+                <p>
+                  A collaborative matchday website built with Astro and the Google Maps API.
+                </p>
+                <a href="https://metlifematchday.com" target="_blank" rel="noreferrer noopener">Visit MetLife Matchday</a>
+              </div>
+            </article>
+
+            <article class="project-row reveal more-work">
+              <div class="project-name-group">
+                <h3>More work</h3>
+              </div>
+              <div class="project-story">
+                <p>
+                  I built a dynamic blog during my InternCareer internship and a C#
+                  console app that stores and retrieves student records.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="about section-dark" id="about">
+          <div class="container about-inner">
+            <h2 class="section-title reveal">How I work</h2>
+
+            <div class="about-content reveal">
+              <p>
+                When we scoped Edu4U, I helped turn a broad goal into three things a
+                student could actually do: find study material, join a community, and
+                prepare for a career.
+              </p>
+              <p>
+                With Fin-esse, the same habit led to a different decision. I added
+                calculators so readers could apply what they learned to their own
+                numbers.
+              </p>
+              <p>
+                I studied Computer Science at Covenant University. I also enjoy
+                explaining the ideas behind the products I build.
+              </p>
+              <a href="https://www.youtube.com/@Fin-esse-f2c" target="_blank" rel="noreferrer noopener">Fin-esse on YouTube</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-dark" id="contact">
+          <div class="container contact-inner">
+            <h2 class="section-title reveal">Let’s talk</h2>
+            <p class="contact-intro reveal">
+              Have a role, project, or idea you’d like to discuss? Send me an email or
+              find me on LinkedIn.
+            </p>
+            <div class="contact-links reveal">
+              <a href="mailto:olusoguns2005@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/ogundele-olumide" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+              <a href="https://github.com/Olus-Oguns" target="_blank" rel="noreferrer noopener">GitHub</a>
+              <a href="#top" class="back-to-top">Back to top</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
